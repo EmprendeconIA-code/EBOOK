@@ -1,1 +1,1540 @@
-# EBOOK
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guía Definitiva para Emprender Desde Casa con IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Inter', sans-serif; background:#f5f5f5; color:#1a1a1a; }
+    .page { width:210mm; min-height:297mm; padding:15mm; margin:0 auto 20px; background:#fff; position:relative; overflow:hidden; page-break-after:always; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+    .page::before { content:''; position:absolute; top:-50%; right:-50%; width:100%; height:100%; background:radial-gradient(circle, rgba(99,102,241,0.03) 0%, transparent 50%); pointer-events:none; }
+    .page-number { position:absolute; bottom:15mm; right:15mm; font-size:12px; color:#6366f1; font-weight:600; }
+    .cover { display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; height:267mm; }
+    .cover-badge { background:linear-gradient(135deg,#6366f1,#8b5cf6); padding:8px 24px; border-radius:50px; font-size:12px; font-weight:600; color:#fff; margin-bottom:30px; text-transform:uppercase; letter-spacing:2px; }
+    .cover-visual { width:200px; height:200px; background:linear-gradient(135deg,#6366f1 0%,#8b5cf6 50%,#a855f7 100%); border-radius:30px; display:flex; align-items:center; justify-content:center; font-size:80px; margin-bottom:40px; box-shadow:0 25px 50px rgba(99,102,241,0.3); }
+    h1 { font-size:42px; font-weight:900; line-height:1.1; margin-bottom:20px; background:linear-gradient(135deg,#1a1a1a 0%,#6366f1 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .cover-subtitle { font-size:18px; color:#666; margin-bottom:40px; max-width:600px; }
+    .cover-stats { display:flex; gap:40px; }
+    .stat { text-align:center; }
+    .stat-number { font-size:32px; font-weight:800; color:#6366f1; }
+    .stat-label { font-size:11px; color:#666; text-transform:uppercase; letter-spacing:1px; }
+
+    .section-header { margin-bottom:25px; }
+    .section-tag { display:inline-block; background:rgba(99,102,241,0.1); border:1px solid rgba(99,102,241,0.3); padding:6px 16px; border-radius:50px; font-size:11px; font-weight:600; color:#6366f1; text-transform:uppercase; letter-spacing:1px; margin-bottom:15px; }
+    .section-title { font-size:28px; font-weight:800; margin-bottom:10px; color:#1a1a1a; }
+    .section-desc { color:#666; font-size:14px; line-height:1.6; }
+
+    .card { background:#f9fafb; border:1px solid #e5e7eb; border-radius:16px; padding:20px; margin-bottom:15px; }
+    .card-gradient { background:linear-gradient(135deg, rgba(99,102,241,0.05), rgba(139,92,246,0.03)); border:1px solid rgba(99,102,241,0.2); }
+    .card h3 { font-size:16px; font-weight:700; margin-bottom:10px; color:#1a1a1a; }
+    .card p { font-size:13px; color:#4b5563; line-height:1.6; }
+
+    .toolbox { background:linear-gradient(135deg, rgba(34,197,94,0.05), rgba(34,197,94,0.03)); border:1px solid rgba(34,197,94,0.3); border-radius:12px; padding:15px; margin:15px 0; }
+    .toolbox-header { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+    .toolbox-title { font-size:12px; font-weight:700; color:#16a34a; text-transform:uppercase; letter-spacing:1px; }
+
+    .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:15px; }
+    .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+
+    .highlight { background:linear-gradient(135deg,#6366f1,#8b5cf6); border-radius:16px; padding:25px; text-align:center; margin:20px 0; color:#fff; }
+    .highlight h3 { font-size:24px; font-weight:800; margin-bottom:10px; color:#fff; }
+    .highlight p { font-size:14px; opacity:0.95; color:#fff; }
+
+    .steps { display:flex; flex-direction:column; gap:12px; }
+    .step { display:flex; gap:15px; align-items:flex-start; }
+    .step-num { width:32px; height:32px; background:linear-gradient(135deg,#6366f1,#8b5cf6); border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; color:#fff; }
+    .step-content h4 { font-size:14px; font-weight:600; margin-bottom:4px; color:#1a1a1a; }
+    .step-content p { font-size:12px; color:#666; }
+
+    .icon-circle { width:50px; height:50px; background:linear-gradient(135deg, rgba(99,102,241,0.15), rgba(139,92,246,0.1)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; margin-bottom:15px; }
+
+    .quote { border-left:3px solid #6366f1; padding-left:20px; margin:20px 0; font-style:italic; color:#6366f1; font-size:16px; }
+
+    .checklist { list-style:none; }
+    .checklist li { display:flex; align-items:center; gap:10px; padding:8px 0; font-size:13px; color:#374151; }
+    .checklist li::before { content:'✓'; color:#22c55e; font-weight:bold; margin-right:8px; }
+
+    .table-container { background:#f9fafb; border-radius:12px; overflow:hidden; margin:15px 0; border:1px solid #e5e7eb; }
+    table { width:100%; border-collapse:collapse; }
+    th { background:rgba(99,102,241,0.1); padding:12px; text-align:left; font-size:12px; font-weight:600; color:#6366f1; text-transform:uppercase; letter-spacing:1px; }
+    td { padding:12px; font-size:13px; color:#374151; border-bottom:1px solid #e5e7eb; }
+
+    .tip { background:rgba(251,191,36,0.1); border:1px solid rgba(251,191,36,0.3); border-radius:12px; padding:15px; margin:15px 0; }
+    .tip-header { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+    .tip-title { font-size:12px; font-weight:700; color:#d97706; text-transform:uppercase; }
+
+    .module-header { background:linear-gradient(135deg, rgba(99,102,241,0.08), rgba(139,92,246,0.05)); border:1px solid rgba(99,102,241,0.2); border-radius:20px; padding:30px; margin-bottom:25px; text-align:center; }
+    .module-num { font-size:60px; font-weight:900; background:linear-gradient(135deg,#6366f1,#a855f7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; line-height:1; }
+    .module-title { font-size:22px; font-weight:700; margin-top:10px; color:#1a1a1a; }
+    .module-level { display:inline-block; background:rgba(34,197,94,0.15); color:#16a34a; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:600; margin-top:10px; }
+
+    .index-title { font-size:36px; font-weight:900; margin-bottom:40px; text-align:center; color:#1a1a1a; }
+    .index-section { margin-bottom:30px; }
+    .index-section-title { font-size:18px; font-weight:700; color:#6366f1; margin-bottom:15px; padding-bottom:8px; border-bottom:2px solid #6366f1; }
+    .index-item { display:flex; justify-content:space-between; padding:10px 15px; margin-bottom:5px; background:#f9fafb; border-radius:8px; transition:all 0.2s; }
+    .index-item:hover { background:rgba(99,102,241,0.08); transform:translateX(5px); }
+    .index-item-text { font-size:14px; color:#374151; }
+    .index-item-page { font-size:13px; color:#6366f1; font-weight:600; min-width:30px; text-align:right; }
+
+    @media print { .page { margin:0; box-shadow:none; } body { background:#fff; } }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: COVER -->
+  <div class="page">
+    <div class="cover">
+      <div class="cover-badge">Edición 2025</div>
+      <div class="cover-visual">🤖</div>
+      <h1>Guía Definitiva para Emprender Desde Casa con IA</h1>
+      <p class="cover-subtitle">Transforma tu conocimiento en ingresos usando Inteligencia Artificial. Sin inversión inicial, sin experiencia previa.</p>
+      <div class="cover-stats">
+        <div class="stat">
+          <div class="stat-number">12+</div>
+          <div class="stat-label">Modelos de Negocio</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">5X</div>
+          <div class="stat-label">Productividad</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">$0</div>
+          <div class="stat-label">Inversión Inicial</div>
+        </div>
+      </div>
+    </div>
+    <div class="page-number">01</div>
+  </div>
+
+  <!-- PAGE 2: INDEX -->
+  <div class="page">
+    <h2 class="index-title">📑 Índice Completo</h2>
+
+    <div class="index-section">
+      <div class="index-section-title">Introducción y Mentalidad</div>
+      <div class="index-item"><span class="index-item-text">Portada</span><span class="index-item-page">01</span></div>
+      <div class="index-item"><span class="index-item-text">Índice Completo</span><span class="index-item-page">02</span></div>
+      <div class="index-item"><span class="index-item-text">¡Bienvenido a la Nueva Economía!</span><span class="index-item-page">03</span></div>
+      <div class="index-item"><span class="index-item-text">La IA es Tu Socio: El 5X de Productividad</span><span class="index-item-page">04</span></div>
+    </div>
+
+    <div class="index-section">
+      <div class="index-section-title">Módulo 1: Creación Rápida de Infoproductos</div>
+      <div class="index-item"><span class="index-item-text">El Primer Paso: Benchmarking para Vender</span><span class="index-item-page">05</span></div>
+      <div class="index-item"><span class="index-item-text">Tu Ebook Listo en 60 Minutos</span><span class="index-item-page">06</span></div>
+      <div class="index-item"><span class="index-item-text">Diseño Profesional sin Ser Diseñador</span><span class="index-item-page">07</span></div>
+      <div class="index-item"><span class="index-item-text">Negocio Adicional 1: Venta de Activos Digitales</span><span class="index-item-page">08</span></div>
+      <div class="index-item"><span class="index-item-text">Negocio Adicional 2: Ingeniería de Prompts</span><span class="index-item-page">09</span></div>
+    </div>
+
+    <div class="index-section">
+      <div class="index-section-title">Módulo 2: Creación y Automatización de Ventas</div>
+      <div class="index-item"><span class="index-item-text">El Sistema "Vende Mientras Duermes"</span><span class="index-item-page">10</span></div>
+      <div class="index-item"><span class="index-item-text">Tráfico Orgánico con Contenido Viral</span><span class="index-item-page">11</span></div>
+      <div class="index-item"><span class="index-item-text">El Vendedor 24/7: Implementando tu Bot</span><span class="index-item-page">12</span></div>
+      <div class="index-item"><span class="index-item-text">Negocio Clave: Print On Demand</span><span class="index-item-page">13</span></div>
+      <div class="index-item"><span class="index-item-text">Marketing de Afiliados Automatizado</span><span class="index-item-page">14</span></div>
+      <div class="index-item"><span class="index-item-text">Negocio de Servicios 1: Copywriting Básico</span><span class="index-item-page">15</span></div>
+      <div class="index-item"><span class="index-item-text">Negocio de Servicios 2: Páginas Web Rápidas</span><span class="index-item-page">16</span></div>
+      <div class="index-item"><span class="index-item-text">Negocio de Servicios 3: Gestión de Flujos</span><span class="index-item-page">17</span></div>
+    </div>
+
+    <div class="index-section">
+      <div class="index-section-title">Módulo 3: Ideas de Alto Impacto</div>
+      <div class="index-item"><span class="index-item-text">El Negocio del Branding: Influencers Virtuales</span><span class="index-item-page">18</span></div>
+      <div class="index-item"><span class="index-item-text">Instalación de Chatbots de Servicio</span><span class="index-item-page">19</span></div>
+      <div class="index-item"><span class="index-item-text">Venta de Formación y Coaching con IA</span><span class="index-item-page">20</span></div>
+      <div class="index-item"><span class="index-item-text">El Secreto del Tráfico Pagado</span><span class="index-item-page">21</span></div>
+      <div class="index-item"><span class="index-item-text">Tu Plan de Acción: Challenge de 7 Días</span><span class="index-item-page">22</span></div>
+      <div class="index-item"><span class="index-item-text">El Futuro de la IA: Siempre un Paso Adelante</span><span class="index-item-page">23</span></div>
+    </div>
+
+    <div class="index-section">
+      <div class="index-section-title">Conclusión y Bonos</div>
+      <div class="index-item"><span class="index-item-text">Tu Próxima Tarea: Empieza Ya</span><span class="index-item-page">24</span></div>
+      <div class="index-item"><span class="index-item-text">¡Acceso a tus 3 Bonos Exclusivos!</span><span class="index-item-page">25</span></div>
+      <div class="index-item"><span class="index-item-text">Recursos Esenciales y Despedida</span><span class="index-item-page">26</span></div>
+    </div>
+
+    <div class="page-number">02</div>
+  </div>
+
+  <!-- PAGE 3: BIENVENIDA -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Navegación</div>
+      <h2 class="section-title">¡Bienvenido a la Nueva Economía!</h2>
+      <p class="section-desc">Esta guía te llevará paso a paso desde cero hasta tu primer negocio rentable con IA.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>🎯 Lo Que Aprenderás</h3>
+      <p>En las próximas páginas descubrirás 12+ modelos de negocio probados que puedes empezar HOY con cero inversión. Cada uno con herramientas específicas, pasos claros y estrategias de monetización.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="icon-circle">📚</div>
+        <h3>Nivel Básico</h3>
+        <p>Infoproductos, diseño digital y prompts. Perfecto para empezar sin experiencia técnica.</p>
+      </div>
+      <div class="card">
+        <div class="icon-circle">⚡</div>
+        <h3>Nivel Intermedio</h3>
+        <p>Automatización, servicios y marketing. Escala tus ingresos con sistemas inteligentes.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon-circle">💎</div>
+      <h3>Nivel Avanzado</h3>
+      <p>Proyectos de alto impacto como influencers virtuales, chatbots empresariales y coaching. Mayor inversión de tiempo, mayores retornos.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>🚀 Tu Compromiso</h3>
+      <p>Esta no es una guía para leer y olvidar. Es un plan de acción. Cada página tiene tareas específicas. ¿Estás listo para implementar?</p>
+    </div>
+
+    <div class="card">
+      <h3>📋 Cómo Usar Esta Guía</h3>
+      <ul class="checklist">
+        <li>Lee una sección completa sin distracciones</li>
+        <li>Marca las herramientas que vas a probar</li>
+        <li>Completa la tarea del día antes de avanzar</li>
+        <li>Guarda los prompts y plantillas para referencia</li>
+        <li>Revisa el plan de 7 días al final</li>
+      </ul>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>💡</span><span class="tip-title">Consejo Inicial</span></div>
+      <p>No intentes hacer todo a la vez. Elige UN modelo de negocio del Módulo 1, domínalo, y luego expande. La claridad y el enfoque son tu mejor ventaja.</p>
+    </div>
+
+    <div class="page-number">03</div>
+  </div>
+
+  <!-- PAGE 4: MENTALIDAD -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Mentalidad</div>
+      <h2 class="section-title">La IA es Tu Socio: El 5X de Productividad</h2>
+      <p class="section-desc">Elimina la parálisis por análisis. Es momento de implementar.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>🧠 El Nuevo Paradigma</h3>
+      <p>Ya no compites contra personas. Compites contra personas USANDO IA.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="icon-circle">⏰</div>
+        <h3>Antes: 40 horas</h3>
+        <p>Crear un ebook requería semanas de investigación, escritura y diseño. Solo expertos podían hacerlo bien.</p>
+      </div>
+      <div class="card card-gradient">
+        <div class="icon-circle">⚡</div>
+        <h3>Ahora: 8 horas</h3>
+        <p>Con IA, cualquier persona puede crear contenido profesional en una fracción del tiempo. Tú diriges, la IA ejecuta.</p>
+      </div>
+    </div>
+
+    <div class="quote">"No necesitas ser experto en todo. Necesitas ser experto en hacer las preguntas correctas a la IA."</div>
+
+    <div class="card">
+      <h3>🎯 Los 3 Pilares del Éxito con IA</h3>
+      <div class="steps" style="margin-top:15px;">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Claridad de Objetivo</h4>
+            <p>Define exactamente qué quieres lograr antes de pedirle algo a la IA.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Iteración Rápida</h4>
+            <p>El primer resultado nunca es perfecto. Refina, ajusta, mejora en ciclos cortos.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Acción Inmediata</h4>
+            <p>Lanza rápido, mejora después. El mercado te dará feedback real.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>💡</span><span class="tip-title">Mindset Clave</span></div>
+      <p>La perfección es enemiga del progreso. Un producto "suficientemente bueno" publicado HOY vale más que uno perfecto que nunca sale.</p>
+    </div>
+
+    <div class="page-number">04</div>
+  </div>
+
+  <!-- PAGE 5: BENCHMARKING -->
+  <div class="page">
+    <div class="module-header">
+      <div class="module-num">01</div>
+      <div class="module-title">Creación Rápida de Infoproductos</div>
+      <div class="module-level">Nivel Básico</div>
+    </div>
+
+    <div class="section-header">
+      <div class="section-tag">Validación</div>
+      <h2 class="section-title">El Primer Paso: Benchmarking para Vender</h2>
+      <p class="section-desc">Deja de adivinar. Aprende a usar las tendencias para validar nichos rentables.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>🔍 ¿Por Qué Investigar Primero?</h3>
+      <p>El 90% de los emprendedores fracasan porque crean lo que ELLOS quieren, no lo que el MERCADO necesita. 15 minutos de investigación pueden ahorrarte meses de trabajo perdido.</p>
+    </div>
+
+    <div class="grid-2" style="margin-top:20px;">
+      <div class="card">
+        <h3>📚 Amazon KDP</h3>
+        <p>Busca los Top 100 de tu categoría. Analiza títulos, portadas y reseñas. ¿Qué están pidiendo los compradores?</p>
+      </div>
+      <div class="card">
+        <h3>🛍️ Etsy Trends</h3>
+        <p>Explora qué productos digitales tienen más ventas. Plantillas, diseños y recursos son oro puro.</p>
+      </div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Toolbox IA</span></div>
+      <div class="toolbox-content"><strong>ChatGPT / Gemini:</strong> Pídele que analice las tendencias de un nicho específico y te dé 10 ideas de productos validadas por demanda real.</div>
+    </div>
+
+    <div class="card">
+      <h3>✅ Checklist de Validación Rápida</h3>
+      <ul class="checklist">
+        <li>¿Hay al menos 5 productos similares vendiéndose bien?</li>
+        <li>¿Las reseñas mencionan problemas que puedes resolver mejor?</li>
+        <li>¿Puedes crear algo en menos de 1 semana?</li>
+        <li>¿El precio promedio es mayor a $7 USD?</li>
+        <li>¿Tienes conocimiento o interés genuino en el tema?</li>
+      </ul>
+    </div>
+
+    <div class="page-number">05</div>
+  </div>
+
+  <!-- PAGE 6: EBOOK EN 60 MIN -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Creación</div>
+      <h2 class="section-title">Tu Ebook Listo en 60 Minutos</h2>
+      <p class="section-desc">Micro-pasos para crear tu primer producto digital hoy mismo.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>⏱️ El Método 60-Minutos</h3>
+      <p>20 min estructura + 30 min contenido + 10 min revisión = Ebook listo</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Define tu Tema (5 min)</h4>
+          <p>Usa tu validación del benchmarking. Elige UN problema específico que resolverás.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Genera la Estructura (15 min)</h4>
+          <p>Pide a la IA un índice de 8-12 capítulos cortos. Cada uno resuelve un sub-problema.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Desarrolla el Contenido (30 min)</h4>
+          <p>Capítulo por capítulo, pide a la IA que expanda. Añade tu toque personal y ejemplos.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Revisa y Humaniza (10 min)</h4>
+          <p>Lee todo. Ajusta el tono. Agrega anécdotas reales. La IA + TÚ = Magia.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Toolbox IA: ChatGPT / Gemini</span></div>
+      <div class="toolbox-content"><strong>Prompt del Bono 1:</strong> "Actúa como un experto en [TEMA]. Crea un índice para un ebook de 30 páginas dirigido a [AUDIENCIA] que resuelve [PROBLEMA]. Incluye introducción, 8 capítulos prácticos y conclusión con llamada a la acción."</div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>💡</span><span class="tip-title">Pro Tip</span></div>
+      <p>No escribas un libro de 200 páginas. Los ebooks de 25-40 páginas con contenido denso y accionable venden MEJOR que libros largos y aburridos.</p>
+    </div>
+
+    <div class="page-number">06</div>
+  </div>
+
+  <!-- PAGE 7: DISEÑO -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Diseño</div>
+      <h2 class="section-title">Diseño Profesional sin Ser Diseñador</h2>
+      <p class="section-desc">Crea presentaciones y ebooks visuales con cero costo y cero experiencia.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>🎨 La Verdad sobre el Diseño</h3>
+      <p>El 80% de un buen diseño es elegir la plantilla correcta. El otro 20% es no arruinarla. Las herramientas de IA hacen ambas cosas por ti.</p>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Toolbox IA: Gamma App</span></div>
+      <div class="toolbox-content"><strong>Paso 1:</strong> Escribe el tema → <strong>Paso 2:</strong> La IA genera diseño completo → <strong>Paso 3:</strong> Exporta como PDF. ¡Listo!</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>📋 Herramientas Gratuitas</h3>
+        <ul class="checklist">
+          <li>Gamma App (IA para presentaciones)</li>
+          <li>Canva (plantillas prediseñadas)</li>
+          <li>Google Slides (simple pero efectivo)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🎯 Checklist Visual</h3>
+        <ul class="checklist">
+          <li>Fuente legible (mínimo 12pt)</li>
+          <li>Colores contrastantes</li>
+          <li>Espacios en blanco generosos</li>
+          <li>Imágenes en alta resolución</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>✨ Fórmula de Diseño Ganador</h3>
+      <p><strong>Portada impactante</strong> (título + subtítulo + imagen) + <strong>Contenido limpio</strong> (un concepto por página) + <strong>CTA final</strong> (qué hacer después) = Ebook profesional</p>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>⚠️</span><span class="tip-title">Evita Esto</span></div>
+      <p>No uses más de 2 fuentes diferentes. No mezcles más de 3 colores. No llenes cada página con texto. El diseño minimalista siempre gana.</p>
+    </div>
+
+    <div class="page-number">07</div>
+  </div>
+
+  <!-- PAGE 8: ACTIVOS DIGITALES -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Negocio 1</div>
+      <h2 class="section-title">Venta de Activos Digitales</h2>
+      <p class="section-desc">Crea diseños sencillos una vez, véndelos infinitas veces.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>💰 El Poder del Producto Infinito</h3>
+      <p>Costo de creación: 2 horas. Costo de replicación: $0. Margen de ganancia: 100%.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card"><h3>🖼️ Fondos</h3><p>Texturas, patterns, fondos abstractos para diseñadores.</p></div>
+      <div class="card"><h3>📐 Plantillas</h3><p>Para redes sociales, presentaciones, CVs.</p></div>
+      <div class="card"><h3>🎨 Ilustraciones</h3><p>Iconos, vectores, elementos decorativos.</p></div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Toolbox IA: Midjourney / Firefly</span></div>
+      <div class="toolbox-content"><strong>Ejemplo de prompt:</strong> "Create a seamless pattern with geometric shapes in pastel colors, minimalist style, 4K resolution, suitable for digital backgrounds --ar 1:1"</div>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Estrategia de Lanzamiento</h3>
+      <div class="steps" style="margin-top:15px;">
+        <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Crea un Pack de 10-20 Diseños</h4><p>No vendas uno solo. Los packs tienen percepción de mayor valor.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Publica en Etsy o Gumroad</h4><p>Título SEO optimizado + 5 imágenes preview + descripción clara.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Precio: $7-15 USD</h4><p>Punto dulce entre asequible y percepción de calidad.</p></div></div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>💡</span><span class="tip-title">Tip Secreto</span></div>
+      <p>Ofrece una versión gratis (3 diseños) para captar emails. Luego vende el pack completo (20 diseños) a tu lista.</p>
+    </div>
+
+    <div class="page-number">08</div>
+  </div>
+
+  <!-- PAGE 9: INGENIERÍA DE PROMPTS -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Negocio 2</div>
+      <h2 class="section-title">Vende Tu Saber: Ingeniería de Prompts</h2>
+      <p class="section-desc">La habilidad más valiosa de la década. Empaquétala y véndela.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>🧠 ¿Qué es Ingeniería de Prompts?</h3>
+      <p>Es el arte de hacer las preguntas correctas a la IA para obtener resultados excepcionales. Y la mayoría de las personas NO sabe hacerlo bien. Ahí está tu oportunidad.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>📦 Productos que Puedes Vender</h3>
+        <ul class="checklist">
+          <li>Colección de 50 prompts para marketing</li>
+          <li>Prompts para crear contenido viral</li>
+          <li>Prompts para copywriting persuasivo</li>
+          <li>Prompts para productividad personal</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>💵 Modelos de Monetización</h3>
+        <ul class="checklist">
+          <li>Venta directa: $9-29 por pack</li>
+          <li>Membresía: $7/mes prompts nuevos</li>
+          <li>Consultoría: $50/hora personalización</li>
+          <li>Curso: $97 masterclass completa</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>✨ Anatomía de un Buen Prompt</h3>
+      <div class="table-container">
+        <table>
+          <tr><th>Elemento</th><th>Descripción</th><th>Ejemplo</th></tr>
+          <tr><td>Rol</td><td>Quién es la IA</td><td>"Actúa como experto en SEO"</td></tr>
+          <tr><td>Contexto</td><td>Situación específica</td><td>"Para un blog de fitness"</td></tr>
+          <tr><td>Tarea</td><td>Qué debe hacer</td><td>"Genera 10 títulos virales"</td></tr>
+          <tr><td>Formato</td><td>Cómo entregar</td><td>"En lista numerada"</td></tr>
+          <tr><td>Restricciones</td><td>Límites claros</td><td>"Máximo 60 caracteres"</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Ejemplo de Prompt Premium</span></div>
+      <div class="toolbox-content">"Actúa como un copywriter experto en conversiones. Para un producto [DESCRIBE PRODUCTO] dirigido a [AUDIENCIA], crea 5 variaciones de copy para anuncio de Facebook. Cada una debe: 1) Empezar con un hook que genere curiosidad, 2) Incluir beneficio emocional, 3) Terminar con CTA urgente, 4) Máximo 150 palabras."</div>
+    </div>
+
+    <div class="page-number">09</div>
+  </div>
+
+  <!-- PAGE 10: SISTEMA VENDE MIENTRAS DUERMES -->
+  <div class="page">
+    <div class="module-header">
+      <div class="module-num">02</div>
+      <div class="module-title">Automatización de Ventas</div>
+      <div class="module-level">Nivel Intermedio</div>
+    </div>
+
+    <div class="section-header">
+      <div class="section-tag">Sistema</div>
+      <h2 class="section-title">El Sistema "Vende Mientras Duermes"</h2>
+      <p class="section-desc">El funnel que convierte visitantes en compradores automáticamente.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>🎯 La Fórmula del Embudo Perfecto</h3>
+      <p>Tráfico → Lead Magnet → Email → Oferta → Venta = Ingresos pasivos</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>🌍 Las 5 Plataformas Globales</h3>
+      <p>No necesitas crear tu propia tienda. Estas plataformas ya tienen millones de compradores esperando:</p>
+      <div class="grid-2" style="margin-top:15px;">
+        <ul class="checklist">
+          <li><strong>Hotmart:</strong> Cursos y ebooks en español</li>
+          <li><strong>Amazon KDP:</strong> Libros digitales globales</li>
+          <li><strong>Gumroad:</strong> Productos digitales simples</li>
+        </ul>
+        <ul class="checklist">
+          <li><strong>Etsy:</strong> Arte y diseños digitales</li>
+          <li><strong>Udemy:</strong> Cursos en video masivos</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🔄 Tu Primer Funnel en 4 Pasos</h3>
+      <div class="steps" style="margin-top:15px;">
+        <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Lead Magnet Gratis</h4><p>Checklist, plantilla o mini-guía. A cambio del email.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Secuencia de 5 Emails</h4><p>Día 1: Bienvenida. Días 2-4: Valor + historia. Día 5: Oferta.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Página de Venta Simple</h4><p>Problema → Solución → Testimonios → Precio → Garantía.</p></div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Post-Venta Automatizada</h4><p>Email de entrega + solicitud de reseña + upsell sutil.</p></div></div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>💡</span><span class="tip-title">Regla de Oro</span></div>
+      <p>Da 10x más valor del que cobras. Si tu producto cuesta $10, debe resolver un problema que valga $100 para tu cliente.</p>
+    </div>
+
+    <div class="page-number">10</div>
+  </div>
+
+  <!-- PAGE 11: TRÁFICO ORGÁNICO -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Tráfico</div>
+      <h2 class="section-title">Tráfico Orgánico con Contenido Viral</h2>
+      <p class="section-desc">Convierte un video largo en 30+ piezas de contenido para todas las plataformas.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>🎬 La Estrategia de Contenido Inteligente</h3>
+      <p>Crea UNA pieza grande (video YouTube 10-15 min) → La IA la fragmenta en 30 micro-contenidos → Publicas durante 1 mes entero. Eso es eficiencia.</p>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Toolbox IA: Opus Clip</span></div>
+      <div class="toolbox-content"><strong>Micro-Pasos:</strong> 1) Sube tu video de YouTube → 2) Opus analiza y corta automáticamente los mejores momentos → 3) Descarga 10-15 clips verticales listos para TikTok/Reels/Shorts</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>📱 Plataformas Prioritarias 2025</h3>
+        <ul class="checklist">
+          <li>TikTok (1-3 videos diarios)</li>
+          <li>Instagram Reels (1-2 diarios)</li>
+          <li>YouTube Shorts (3-5 semanales)</li>
+          <li>LinkedIn (2-3 posts semanales)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🎯 Tipos de Contenido que Funcionan</h3>
+        <ul class="checklist">
+          <li>Tutoriales paso a paso</li>
+          <li>Antes/Después</li>
+          <li>Errores comunes a evitar</li>
+          <li>Herramientas secretas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Fórmula de Video Viral</h3>
+      <p><strong>Segundo 1-3:</strong> Hook visual impactante → <strong>Segundos 4-10:</strong> Promesa clara → <strong>Segundos 11-45:</strong> Contenido valioso → <strong>Segundos 46-60:</strong> CTA + sorpresa final</p>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>🔥</span><span class="tip-title">Hack de Crecimiento</span></div>
+      <p>Responde a los primeros 10 comentarios en los primeros 10 minutos. El algoritmo interpreta que tu contenido genera conversación y lo muestra a más personas.</p>
+    </div>
+
+    <div class="page-number">11</div>
+  </div>
+
+  <!-- PAGE 12: CHATBOT 24/7 -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Automatización</div>
+      <h2 class="section-title">El Vendedor 24/7: Implementando tu Bot</h2>
+      <p class="section-desc">Responde DMs, califica leads y cierra ventas mientras tú duermes.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>🤖 Bot = Empleado Perfecto</h3>
+      <p>Nunca duerme. Nunca se enferma. Responde en 2 segundos. Trabaja gratis.</p>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Toolbox IA: ManyChat</span></div>
+      <div class="toolbox-content"><strong>Bono 3 - Configuración Rápida:</strong> Plantilla pre-hecha para responder automáticamente preguntas frecuentes en Instagram y Facebook. Solo cambias los textos y está listo.</div>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Los 3 Flujos Esenciales</h3>
+      <div class="steps" style="margin-top:15px;">
+        <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Bienvenida</h4><p>Cuando alguien te escribe por primera vez. Preséntate + pregunta qué necesita.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><h4>FAQ Automático</h4><p>Detecta palabras clave (precio, envío, garantía) y responde instantáneamente.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Seguimiento</h4><p>Si no compran, el bot hace seguimiento a las 24h y 72h con incentivo.</p></div></div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>✅ Lo que SÍ hace el bot</h3>
+        <ul class="checklist">
+          <li>Calificar leads (frío/tibio/caliente)</li>
+          <li>Enviar información de productos</li>
+          <li>Agendar llamadas automáticamente</li>
+          <li>Procesar pagos simples</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>❌ Lo que NO debe hacer</h3>
+        <ul style="list-style:none; color:#dc2626;">
+          <li>✗ Sonar robótico o spam</li>
+          <li>✗ Prometer lo que no puedes cumplir</li>
+          <li>✗ Manejar quejas complejas (escala a humano)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>💡</span><span class="tip-title">Pro Tip</span></div>
+      <p>Añade personalización: usa el nombre de la persona, emojis sutiles y un tono conversacional. La gente olvida que es un bot si la experiencia es buena.</p>
+    </div>
+
+    <div class="page-number">12</div>
+  </div>
+
+  <!-- PAGE 13: PRINT ON DEMAND -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Negocio Clave</div>
+      <h2 class="section-title">Print On Demand: Ropa sin Inventario</h2>
+      <p class="section-desc">El camino más directo para lanzar un producto físico online sin riesgo.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>👕 El Modelo de Negocio Perfecto</h3>
+      <p>Creas el diseño → Cliente compra → Proveedor imprime y envía → Tú solo cobras la diferencia. Cero inventario, cero riesgo, ganancias infinitas.</p>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Toolbox IA: Printful + Shopify</span></div>
+      <div class="toolbox-content">Printful se integra con tu tienda Shopify. Cada vez que vendes, ellos automáticamente producen y envían. Tú solo te enfocas en marketing.</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>🎨 Productos Más Rentables</h3>
+        <ul class="checklist">
+          <li>Camisetas ($10-15 ganancia)</li>
+          <li>Hoodies ($15-25 ganancia)</li>
+          <li>Tazas ($5-8 ganancia)</li>
+          <li>Posters ($8-12 ganancia)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🎯 Nichos que Venden</h3>
+        <ul class="checklist">
+          <li>Frases motivacionales</li>
+          <li>Humor específico de profesiones</li>
+          <li>Amor por mascotas</li>
+          <li>Causas sociales</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Lanzamiento en 3 Días</h3>
+      <div class="steps" style="margin-top:15px;">
+        <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Día 1: Diseños con IA</h4><p>Usa Midjourney para crear 5-10 diseños únicos de tu nicho.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Día 2: Configurar Tienda</h4><p>Shopify + Printful. Sube productos. Escribe descripciones con IA.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Día 3: Primeros Anuncios</h4><p>$5/día en Meta Ads mostrando tus mejores diseños.</p></div></div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>💰</span><span class="tip-title">Pricing Estratégico</span></div>
+      <p>Costo de camiseta: $12. Tu precio: $24.99. Margen: $12.99 por venta. Meta inicial: 5 ventas diarias = $390/mes de ganancia pura.</p>
+    </div>
+
+    <div class="page-number">13</div>
+  </div>
+
+  <!-- PAGE 14: MARKETING AFILIADOS -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Ingresos Pasivos</div>
+      <h2 class="section-title">Marketing de Afiliados Automatizado</h2>
+      <p class="section-desc">Gana comisiones recomendando productos que ya funcionan.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>🎁 Vende sin Crear</h3>
+      <p>15-50% de comisión por cada venta. Sin atención al cliente. Sin crear producto.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>🔍 Cómo Elegir Productos para Promocionar</h3>
+      <p>Busca productos que: 1) Tú usarías realmente, 2) Tienen buenas reseñas (4.5+ estrellas), 3) Ofrecen mínimo 20% de comisión, 4) Tienen página de ventas profesional.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card"><h3>📚 Hotmart</h3><p>Cursos digitales en español. 30-50% comisión.</p></div>
+      <div class="card"><h3>🛍️ Amazon</h3><p>Cualquier producto. 1-10% comisión.</p></div>
+      <div class="card"><h3>💻 Software</h3><p>Herramientas SaaS. Comisión recurrente.</p></div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">IA para Contenido de Afiliados</span></div>
+      <div class="toolbox-content"><strong>Prompt:</strong> "Crea una reseña honesta de [PRODUCTO] en 300 palabras. Incluye 3 pros, 2 contras, para quién es ideal, y por qué lo recomiendo. Tono: conversacional y confiable."</div>
+    </div>
+
+    <div class="card">
+      <h3>📝 Tipos de Contenido que Convierten</h3>
+      <ul class="checklist">
+        <li><strong>Reseñas honestas:</strong> "Usé X durante 30 días, esto pasó..."</li>
+        <li><strong>Comparativas:</strong> "X vs Y: ¿Cuál vale la pena?"</li>
+        <li><strong>Tutoriales:</strong> "Cómo logré Z usando X"</li>
+        <li><strong>Listas:</strong> "Top 5 herramientas de IA que uso diariamente"</li>
+      </ul>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>⚖️</span><span class="tip-title">Transparencia</span></div>
+      <p>SIEMPRE divulga que usas links de afiliado. La honestidad construye confianza, y la confianza genera ventas recurrentes.</p>
+    </div>
+
+    <div class="page-number">14</div>
+  </div>
+
+  <!-- PAGE 15: COPYWRITING -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Servicio 1</div>
+      <h2 class="section-title">Copywriting Básico: Posts de Redes</h2>
+      <p class="section-desc">La IA hace el 80%, tú el 20% de edición. Cobra $50-200 por cliente mensual.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>✍️ Por Qué Este Servicio es Perfecto para Empezar</h3>
+      <p>Dificultad controlada: no necesitas ser escritor profesional. Solo entender a la audiencia del cliente y saber dirigir la IA. Los negocios locales están DESESPERADOS por contenido consistente.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>📋 Paquete Básico Mensual</h3>
+        <ul class="checklist">
+          <li>12 posts para Instagram/Facebook</li>
+          <li>3 posts para LinkedIn</li>
+          <li>5 historias interactivas</li>
+          <li>Precio: $150-250 USD</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🎯 Tu Proceso en 30 Min/Cliente</h3>
+        <ul class="checklist">
+          <li>Brief: 10 min (qué, para quién, tono)</li>
+          <li>IA genera: 10 min (todos los posts)</li>
+          <li>Tú editas: 10 min (humanizar)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Prompt de Copywriting</span></div>
+      <div class="toolbox-content">"Actúa como copywriter experto. Crea 4 posts para Instagram para [NEGOCIO]. Audiencia: [DESCRIBE]. Objetivo: [ENGAGEMENT/VENTAS]. Cada post debe: iniciar con hook emocional, incluir storytelling breve, terminar con pregunta o CTA. Tono: [PROFESIONAL/CASUAL/INSPIRADOR]. 150 palabras max c/u."</div>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Cómo Conseguir tus Primeros 3 Clientes</h3>
+      <div class="steps" style="margin-top:15px;">
+        <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Auditoría Gratis</h4><p>Ofrece analizar las redes de un negocio local y dar 3 ideas de mejora.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Prueba de 1 Semana</h4><p>Crea 3 posts gratis. Si les gusta, contratan el mes completo.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Referidos</h4><p>Por cada cliente que refiere otro, 1 mes con 20% descuento.</p></div></div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>🎓</span><span class="tip-title">Especialízate</span></div>
+      <p>En vez de "copywriting para todos", elige un nicho: restaurantes, gimnasios, coaches, dentistas. Te vuelves experto rápido y cobras más.</p>
+    </div>
+
+    <div class="page-number">15</div>
+  </div>
+
+  <!-- PAGE 16: PÁGINAS WEB -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Servicio 2</div>
+      <h2 class="section-title">Páginas Web Rápidas con IA</h2>
+      <p class="section-desc">Vende velocidad a PYMEs. Web profesional en 2 días, no en 2 meses.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>⚡ Tu Ventaja Competitiva</h3>
+      <p>Agencias cobran $2,000 y tardan 6 semanas. Tú cobras $500 y entregas en 48 horas.</p>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Builders de IA Recomendados</span></div>
+      <div class="toolbox-content"><strong>Framer AI:</strong> Describe el negocio, genera sitio completo. <strong>10Web:</strong> Copia sitio de competencia, crea uno mejor. <strong>Durable:</strong> Web lista en 30 segundos.</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>📦 Paquete Estándar</h3>
+        <ul class="checklist">
+          <li>Landing page de 5 secciones</li>
+          <li>Formulario de contacto</li>
+          <li>Optimizado para móviles</li>
+          <li>Integración con WhatsApp</li>
+          <li>Precio: $400-600 USD</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>💎 Paquete Premium</h3>
+        <ul class="checklist">
+          <li>Todo lo anterior +</li>
+          <li>Blog integrado</li>
+          <li>Chatbot de atención</li>
+          <li>Analytics configurado</li>
+          <li>Precio: $800-1,200 USD</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Proceso de Entrega Express</h3>
+      <div class="table-container">
+        <table>
+          <tr><th>Fase</th><th>Duración</th><th>Acción</th></tr>
+          <tr><td>Brief</td><td>30 min</td><td>Llamada para entender negocio y necesidades</td></tr>
+          <tr><td>Diseño</td><td>3 horas</td><td>IA genera 3 opciones, cliente elige 1</td></tr>
+          <tr><td>Contenido</td><td>2 horas</td><td>IA escribe textos, tú personalizas</td></tr>
+          <tr><td>Revisión</td><td>1 hora</td><td>Cliente da feedback, ajustes finales</td></tr>
+          <tr><td>Entrega</td><td>30 min</td><td>Publicar y capacitar al cliente</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>💰</span><span class="tip-title">Ingreso Recurrente</span></div>
+      <p>Ofrece mantenimiento mensual ($50-100): actualizaciones de contenido, respaldo, soporte técnico. 10 clientes = $500-1,000/mes pasivo.</p>
+    </div>
+
+    <div class="page-number">16</div>
+  </div>
+
+  <!-- PAGE 17: GESTIÓN DE FLUJOS -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Servicio 3</div>
+      <h2 class="section-title">Gestión de Flujos con ClickUp</h2>
+      <p class="section-desc">Vende organización. La IA optimiza el workflow de tus clientes.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>📊 El Problema que Resuelves</h3>
+      <p>El 90% de emprendedores y pequeños equipos trabajan en caos total. Tareas perdidas, proyectos atrasados, comunicación fragmentada. Tú les vendes ORDEN y CLARIDAD.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>🎯 Lo Que Ofreces</h3>
+        <ul class="checklist">
+          <li>Plantilla ClickUp personalizada</li>
+          <li>Automatizaciones configuradas</li>
+          <li>Capacitación del equipo (2h)</li>
+          <li>Soporte durante 30 días</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>💵 Pricing Escalonado</h3>
+        <ul class="checklist">
+          <li>Setup básico: $300</li>
+          <li>Setup + automatizaciones: $600</li>
+          <li>Setup completo + training: $1,000</li>
+          <li>Consultoría mensual: $200-400</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">IA para Optimizar Workflows</span></div>
+      <div class="toolbox-content">Usa ChatGPT para analizar el proceso actual del cliente y sugerir mejoras: "Describe tu proceso de [X]. La IA identificará cuellos de botella y propondrá automatizaciones."</div>
+    </div>
+
+    <div class="card">
+      <h3>🏆 Casos de Uso Rentables</h3>
+      <div class="grid-3" style="margin-top:15px;">
+        <div style="background:rgba(99,102,241,0.05); padding:15px; border-radius:8px; text-align:center; border:1px solid rgba(99,102,241,0.2);">
+          <div style="font-size:24px; margin-bottom:8px;">📱</div>
+          <strong style="font-size:13px;">Agencias</strong>
+          <p style="font-size:11px; color:#666; margin-top:5px;">Gestión de clientes y proyectos</p>
+        </div>
+        <div style="background:rgba(34,197,94,0.05); padding:15px; border-radius:8px; text-align:center; border:1px solid rgba(34,197,94,0.2);">
+          <div style="font-size:24px; margin-bottom:8px;">🏢</div>
+          <strong style="font-size:13px;">Startups</strong>
+          <p style="font-size:11px; color:#666; margin-top:5px;">Roadmap de producto</p>
+        </div>
+        <div style="background:rgba(251,191,36,0.05); padding:15px; border-radius:8px; text-align:center; border:1px solid rgba(251,191,36,0.2);">
+          <div style="font-size:24px; margin-bottom:8px;">👥</div>
+          <strong style="font-size:13px;">Equipos remotos</strong>
+          <p style="font-size:11px; color:#666; margin-top:5px;">Comunicación async</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Tu Propuesta de Valor</h3>
+      <p style="font-size:14px; line-height:1.7;">"Implemento un sistema que reduce 30% el tiempo en reuniones innecesarias y aumenta 50% la visibilidad de qué está haciendo cada quien. En 1 semana tu equipo trabaja más coordinado que nunca."</p>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>🎁</span><span class="tip-title">Lead Magnet Poderoso</span></div>
+      <p>Crea una plantilla gratuita de ClickUp para un nicho (ej: "Plantilla para Coaches"). Regálala para captar leads, luego vendes la personalización e implementación completa.</p>
+    </div>
+
+    <div class="page-number">17</div>
+  </div>
+
+  <!-- PAGE 18: INFLUENCERS VIRTUALES -->
+  <div class="page">
+    <div class="module-header">
+      <div class="module-num">03</div>
+      <div class="module-title">Ideas de Alto Impacto</div>
+      <div class="module-level" style="background:rgba(251,191,36,0.15); color:#d97706;">Nivel Avanzado</div>
+    </div>
+
+    <div class="section-header">
+      <div class="section-tag">Branding</div>
+      <h2 class="section-title">Influencers Virtuales: El Futuro del Branding</h2>
+      <p class="section-desc">Crea un personaje digital y colabora con marcas reales.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>🤖 El Modelo de Negocio</h3>
+      <p>Lil Miquela gana $10M+/año. Tú no necesitas llegar ahí para tener éxito. 10K seguidores comprometidos = $500-2,000/mes en colaboraciones.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>✅ Requisitos para el Éxito</h3>
+        <ul class="checklist">
+          <li>Consistencia visual (mismo personaje)</li>
+          <li>Personalidad definida</li>
+          <li>Contenido 3-5x por semana</li>
+          <li>Estrategia de crecimiento</li>
+          <li>Paciencia (6-12 meses)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>💰 Fuentes de Ingreso</h3>
+        <ul class="checklist">
+          <li>Posts patrocinados ($100-5,000)</li>
+          <li>Embajador de marca</li>
+          <li>Venta de merchandise</li>
+          <li>Contenido exclusivo (Patreon)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Herramientas de Creación</span></div>
+      <div class="toolbox-content"><strong>Midjourney:</strong> Genera el personaje con consistencia. <strong>D-ID / HeyGen:</strong> Dale voz y movimiento. <strong>ChatGPT:</strong> Crea su personalidad y guiones.</div>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Estrategia de Lanzamiento</h3>
+      <div class="steps" style="margin-top:15px;">
+        <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Mes 1-2: Construcción</h4><p>Define nicho, crea 30 posts preparados, establece tono y estilo.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Mes 3-6: Crecimiento</h4><p>Contenido viral, colaboraciones con micro-influencers, engagement constante.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Mes 7+: Monetización</h4><p>Pitch a marcas con media kit profesional. Comienza con marcas pequeñas.</p></div></div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>⚠️</span><span class="tip-title">Transparencia Legal</span></div>
+      <p>Siempre divulga que es un personaje virtual. La autenticidad (paradójicamente) genera más confianza que intentar engañar.</p>
+    </div>
+
+    <div class="page-number">18</div>
+  </div>
+
+  <!-- PAGE 19: CHATBOTS PRO -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Alto Valor</div>
+      <h2 class="section-title">Chatbots de Servicio al Cliente (Cobro Alto)</h2>
+      <p class="section-desc">De bot "tonto" a asistente inteligente que resuelve problemas reales.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>💎 El Modelo de Alto Valor</h3>
+      <p>Setup inicial: $1,500-3,000 + Mantenimiento mensual: $300-800</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>🤖 Bot "Tonto" (Básico)</h3>
+        <ul class="checklist" style="list-style:none;">
+          <li style="color:#666;">→ Responde preguntas fijas</li>
+          <li style="color:#666;">→ Detecta palabras clave</li>
+          <li style="color:#666;">→ Escala a humano siempre</li>
+        </ul>
+        <p style="margin-top:10px; font-size:12px; color:#666;">Resuelve 20-30% de consultas</p>
+      </div>
+      <div class="card card-gradient">
+        <h3>🧠 Bot "Inteligente" (Premium)</h3>
+        <ul class="checklist">
+          <li>Entiende contexto y jerga</li>
+          <li>Accede a base de conocimientos</li>
+          <li>Procesa transacciones simples</li>
+          <li>Aprende de interacciones</li>
+        </ul>
+        <p style="margin-top:10px; font-size:12px; color:#16a34a; font-weight:600;">Resuelve 60-80% de consultas</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Industrias de Alto Valor</h3>
+      <div class="table-container">
+        <table>
+          <tr><th>Industria</th><th>Use Case</th><th>Precio Setup</th></tr>
+          <tr><td>E-commerce</td><td>Rastreo pedidos, cambios, devoluciones</td><td>$2,000-3,500</td></tr>
+          <tr><td>SaaS</td><td>Onboarding, troubleshooting, FAQs</td><td>$2,500-4,000</td></tr>
+          <tr><td>Salud</td><td>Agendar citas, recordatorios</td><td>$1,800-3,000</td></tr>
+          <tr><td>Educación</td><td>Admisiones, información de cursos</td><td>$1,500-2,500</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">Stack Tecnológico</span></div>
+      <div class="toolbox-content"><strong>Base:</strong> Voiceflow / Landbot. <strong>Inteligencia:</strong> OpenAI API integrada. <strong>Datos:</strong> Conexión con CRM del cliente (Zapier). <strong>Multicanal:</strong> Web + WhatsApp + Instagram.</div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>📊</span><span class="tip-title">Vende con Datos</span></div>
+      <p>"Implementando este bot, tu equipo de soporte reduce 60% de consultas repetitivas. Eso equivale a liberar 24 horas/semana = $2,400/mes ahorrados en salarios."</p>
+    </div>
+
+    <div class="page-number">19</div>
+  </div>
+
+  <!-- PAGE 20: COACHING CON IA -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Formación</div>
+      <h2 class="section-title">Venta de Formación y Coaching con IA</h2>
+      <p class="section-desc">La IA crea el currículo y estructura. Tú aportas experiencia y conexión humana.</p>
+    </div>
+
+    <div class="card card-gradient"><h3>🎓 El Secreto del Coaching Rentable</h3><p>No necesitas saber TODO. Necesitas saber 10% más que tu estudiante y tener un sistema probado. La IA te ayuda con ambas cosas.</p></div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>📚 Curso Online</h3>
+        <ul class="checklist">
+          <li>8-12 módulos en video</li>
+          <li>Material descargable</li>
+          <li>Comunidad privada</li>
+          <li>Precio: $97-497</li>
+        </ul>
+        <p style="margin-top:10px; font-size:12px; color:#666;">Escalable, vende mientras duermes</p>
+      </div>
+      <div class="card">
+        <h3>💼 Coaching 1:1</h3>
+        <ul class="checklist">
+          <li>Sesiones semanales (1h)</li>
+          <li>Plan personalizado</li>
+          <li>Acceso directo vía WhatsApp</li>
+          <li>Precio: $300-1,500/mes</li>
+        </ul>
+        <p style="margin-top:10px; font-size:12px; color:#16a34a; font-weight:600;">Alto valor, alto ticket</p>
+      </div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">IA como Asistente de Coaching</span></div>
+      <div class="toolbox-content"><strong>Crear currículo:</strong> "Diseña un curso de 10 módulos sobre [TEMA] para [AUDIENCIA]. Cada módulo debe tener objetivo, contenido y ejercicio práctico." <br><br><strong>Preparar sesiones:</strong> "Crea una agenda de coaching para [OBJETIVO DEL CLIENTE] con 5 preguntas poderosas y 3 ejercicios de reflexión."</div>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Estructura de Curso Ganador</h3>
+      <div class="steps" style="margin-top:15px;">
+        <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Módulo de Fundamentos</h4><p>Elimina objeciones, establece mentalidad correcta.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Módulos de Implementación</h4><p>60% del curso. Paso a paso accionable con ejemplos reales.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Módulo de Optimización</h4><p>Cómo escalar, errores comunes, recursos avanzados.</p></div></div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>🎯</span><span class="tip-title">Posicionamiento</span></div>
+      <p>No seas "coach de negocios". Sé "coach que ayuda a freelancers a conseguir su primer cliente de $1,000 en 30 días". La especificidad vende.</p>
+    </div>
+
+    <div class="page-number">20</div>
+  </div>
+
+  <!-- PAGE 21: TRÁFICO PAGADO -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Escalamiento</div>
+      <h2 class="section-title">El Secreto del Tráfico Pagado</h2>
+      <p class="section-desc">Testea rápido con presupuesto mínimo. Escala solo lo que funciona.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>💡 La Regla de Oro</h3>
+      <p>$1 USD/día por 7 días = $7. Si no ganas mínimo $14, no escales. Si funciona, duplica.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>🎯 Meta Ads: El Más Accesible para Empezar</h3>
+      <p>Facebook e Instagram combinados. Audiencia masiva. Segmentación precisa. Presupuesto desde $1/día. Perfecto para validar productos digitales rápidamente.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>📊 Fase de Prueba ($7-30)</h3>
+        <ul class="checklist">
+          <li>3-5 creatividades diferentes</li>
+          <li>Audiencia amplia (IA la define)</li>
+          <li>Objetivo: engagement o tráfico</li>
+          <li>Duración: 7 días</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🚀 Fase de Escala ($100-500)</h3>
+        <ul class="checklist">
+          <li>Solo la creatividad ganadora</li>
+          <li>Audiencias similares (lookalike)</li>
+          <li>Objetivo: conversiones</li>
+          <li>Incrementos del 20% cada 3 días</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="toolbox">
+      <div class="toolbox-header"><span class="toolbox-icon">🛠️</span><span class="toolbox-title">IA para Crear Anuncios</span></div>
+      <div class="toolbox-content"><strong>Copy:</strong> "Crea 5 variaciones de copy para anuncio de [PRODUCTO]. Hook en 5 palabras max. Beneficio emocional claro. CTA urgente. 80 palabras c/u." <br><br><strong>Imagen:</strong> Midjourney para visuales impactantes que detengan el scroll.</div>
+    </div>
+
+    <div class="card">
+      <h3>📈 Métricas Clave a Vigilar</h3>
+      <div class="table-container">
+        <table>
+          <tr><th>Métrica</th><th>Qué Significa</th><th>Meta Inicial</th></tr>
+          <tr><td>CTR</td><td>% que hace clic</td><td>&gt;1.5%</td></tr>
+          <tr><td>CPC</td><td>Costo por clic</td><td>&lt;$0.50</td></tr>
+          <tr><td>CPA</td><td>Costo por compra</td><td>&lt;30% del precio</td></tr>
+          <tr><td>ROAS</td><td>Retorno de inversión</td><td>&gt;2x (mínimo)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>⚠️</span><span class="tip-title">Evita el Error Fatal</span></div>
+      <p>NO escales un anuncio sin datos. 7 días de prueba con $1/día te evita perder $500 en una campaña que nunca iba a funcionar.</p>
+    </div>
+
+    <div class="page-number">21</div>
+  </div>
+
+  <!-- PAGE 22: PLAN 7 DÍAS -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Acción</div>
+      <h2 class="section-title">Tu Plan de Acción: Challenge de 7 Días</h2>
+      <p class="section-desc">De la lectura a los resultados. Una tarea clara cada día.</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>🎯 El Objetivo</h3>
+      <p>En 7 días tendrás tu primer infoproducto publicado y tus primeras estrategias de tráfico activas. No perfecto, pero REAL y en el mercado.</p>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <tr><th style="width:15%;">Día</th><th style="width:45%;">Tarea Clave</th><th style="width:40%;">Meta</th></tr>
+        <tr><td><strong style="color:#6366f1; font-size:18px;">1</strong></td><td>Investigación de Nicho</td><td>Identificar 3 ideas validadas en Amazon/Etsy. Elegir 1.</td></tr>
+        <tr><td><strong style="color:#6366f1; font-size:18px;">2</strong></td><td>Crear Estructura del Producto</td><td>Usar IA para generar índice completo de ebook o curso.</td></tr>
+        <tr><td><strong style="color:#6366f1; font-size:18px;">3</strong></td><td>Desarrollar Contenido</td><td>IA genera contenido. Tú editas y humanizas. 60-80% completado.</td></tr>
+        <tr><td><strong style="color:#6366f1; font-size:18px;">4</strong></td><td>Diseño y Formato</td><td>Usar Gamma/Canva para diseño profesional. Exportar PDF.</td></tr>
+        <tr><td><strong style="color:#6366f1; font-size:18px;">5</strong></td><td>Publicar en Plataforma</td><td>Subir a Gumroad o Hotmart. Crear descripción con IA.</td></tr>
+        <tr><td><strong style="color:#6366f1; font-size:18px;">6</strong></td><td>Primer Contenido de Promoción</td><td>Grabar/escribir 3 piezas de contenido para redes sociales.</td></tr>
+        <tr><td><strong style="color:#6366f1; font-size:18px;">7</strong></td><td>Lanzamiento y Análisis</td><td>Publicar todo. Configurar seguimiento. Pedir feedback.</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>✅ Checklist de Validación Final</h3>
+      <ul class="checklist">
+        <li>¿Tu producto resuelve UN problema específico?</li>
+        <li>¿El precio está entre $7-49 para empezar?</li>
+        <li>¿Tienes al menos 3 canales de distribución activos?</li>
+        <li>¿Configuraste una forma de capturar emails?</li>
+        <li>¿Puedes explicar el valor en 1 frase de 10 palabras?</li>
+      </ul>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>🔥</span><span class="tip-title">Motivación Final</span></div>
+      <p>La mayoría NO va a completar este challenge. Tú NO eres la mayoría. La diferencia entre soñadores y emprendedores es la ejecución. ¡Vamos!</p>
+    </div>
+
+    <div class="page-number">22</div>
+  </div>
+
+  <!-- PAGE 23: FUTURO IA -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Evolución</div>
+      <h2 class="section-title">El Futuro de la IA: Siempre un Paso Adelante</h2>
+      <p class="section-desc">La IA es un continuum. Adopta la mentalidad de evolución constante.</p>
+    </div>
+
+    <div class="quote">"No se trata de ser experto en IA. Se trata de ser experto en adaptarse."</div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="icon-circle">🔮</div>
+        <h3>Lo Que Viene</h3>
+        <ul class="checklist">
+          <li>Agentes IA autónomos</li>
+          <li>Video generado por IA indistinguible</li>
+          <li>Personalización 1:1 masiva</li>
+          <li>IA que programa IA</li>
+        </ul>
+      </div>
+      <div class="card card-gradient">
+        <div class="icon-circle">🧠</div>
+        <h3>Lo Que Nunca Cambia</h3>
+        <ul class="checklist">
+          <li>Empatía humana</li>
+          <li>Creatividad genuina</li>
+          <li>Ética y valores</li>
+          <li>Conexión emocional</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>📚 Cómo Mantenerte Actualizado</h3>
+      <div class="steps" style="margin-top:15px;">
+        <div class="step"><div class="step-num">1</div><div class="step-content"><h4>15 Minutos Diarios</h4><p>Lee 1 artículo sobre nuevas herramientas o tendencias de IA.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Experimenta Semanalmente</h4><p>Prueba 1 herramienta nueva cada semana. Aunque no la uses después.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Comunidad Activa</h4><p>Únete a grupos donde se comparten avances. Reddit, Discord, LinkedIn.</p></div></div>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <h3>🌟 Tu Ventaja Competitiva</h3>
+      <p>Mientras otros tienen miedo al cambio, tú lo abrazas. Esa es la diferencia entre sobrevivir y prosperar en la era de la IA.</p>
+    </div>
+
+    <div class="card">
+      <h3>💭 Reflexión Final</h3>
+      <p style="font-size:14px; line-height:1.8; color:#374151;">La IA no va a quitarte el trabajo. Una persona USANDO IA sí lo hará. La pregunta no es si la IA va a cambiar tu industria. La pregunta es: ¿estarás del lado correcto de ese cambio? Esta guía te dio las herramientas. Ahora depende de ti usarlas.</p>
+    </div>
+
+    <div class="page-number">23</div>
+  </div>
+
+  <!-- PAGE 24: CONCLUSIÓN -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Cierre</div>
+      <h2 class="section-title">Tu Próxima Tarea: Empieza YA</h2>
+      <p class="section-desc">El conocimiento sin acción es solo entretenimiento.</p>
+    </div>
+
+    <div class="highlight">
+      <h3>🎯 La Verdad Incómoda</h3>
+      <p>El 95% de quienes leen esta guía no hará NADA. ¿Serás parte del 5% que sí actúa?</p>
+    </div>
+
+    <div class="card card-gradient">
+      <h3>💪 Por Qué TÚ Sí Puedes</h3>
+      <p style="margin-bottom:15px;">Has llegado hasta aquí. Eso ya te pone por delante del 80% que ni siquiera termina de leer. Ahora solo queda un paso: <strong style="color:#1a1a1a;">HACER.</strong></p>
+      <ul class="checklist">
+        <li><strong>Inversión inicial:</strong> $0 - Solo necesitas tu tiempo</li>
+        <li><strong>Herramientas:</strong> Todas tienen versión gratuita</li>
+        <li><strong>Conocimiento técnico:</strong> Si sabes usar redes sociales, sabes suficiente</li>
+        <li><strong>Tiempo para resultados:</strong> 30-90 días con trabajo consistente</li>
+      </ul>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>❌ Excusas Comunes</h3>
+        <ul style="list-style:none; font-size:13px; color:#666;">
+          <li style="margin-bottom:8px;">"No tengo tiempo" → Tienes 24h como todos</li>
+          <li style="margin-bottom:8px;">"No sé de tecnología" → La IA hace el trabajo duro</li>
+          <li style="margin-bottom:8px;">"No tengo dinero" → Todo aquí es $0 inicial</li>
+          <li style="margin-bottom:8px;">"¿Y si fallo?" → El único fracaso es no intentarlo</li>
+        </ul>
+      </div>
+      <div class="card card-gradient">
+        <h3>✅ Tu Nuevo Mantra</h3>
+        <div style="text-align:center; padding:20px 10px;">
+          <p style="font-size:18px; font-weight:700; line-height:1.5; color:#1a1a1a;">
+            "Hecho es mejor que perfecto.<br>
+            Publicado vence a perfeccionado.<br>
+            Acción supera a análisis."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Tu Primera Acción (Ahora Mismo)</h3>
+      <p style="margin-bottom:15px; font-size:14px;">Cierra esta guía. Abre ChatGPT. Escribe: "Ayúdame a crear un ebook sobre [TU IDEA] para [TU AUDIENCIA]".</p>
+      <p style="font-size:14px; color:#16a34a; font-weight:600;">Eso es todo. Ese es el primer paso. El resto vendrá naturalmente.</p>
+    </div>
+
+    <div class="quote">"El mejor momento para empezar fue hace 5 años. El segundo mejor momento es AHORA."</div>
+
+    <div class="card" style="background: linear-gradient(135deg,#6366f1,#8b5cf6); border:none; text-align:center; padding:30px;">
+      <h3 style="color:#fff; font-size:22px; margin-bottom:15px;">🎁 ¡Tus Bonos te Esperan!</h3>
+      <p style="color:#e0e7ff; font-size:14px;">Pasa a la siguiente página para acceder a tus 3 bonos exclusivos que acelerarán tu implementación.</p>
+    </div>
+
+    <div class="page-number">24</div>
+  </div>
+
+  <!-- PAGE 25: BONOS -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Extras Valiosos</div>
+      <h2 class="section-title">¡Acceso a tus 3 Bonos Exclusivos!</h2>
+      <p class="section-desc">Herramientas listas para usar que multiplican tu velocidad de implementación.</p>
+    </div>
+
+    <div class="card card-gradient" style="margin-bottom:25px;">
+      <div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <div style="width:60px; height:60px; background:linear-gradient(135deg,#6366f1,#8b5cf6); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:28px; flex-shrink:0;">📘</div>
+        <div>
+          <h3 style="margin-bottom:5px; color:#1a1a1a;">Bono 1: 50 Prompts Profesionales</h3>
+          <p style="font-size:12px; color:#666; margin:0;">Colección lista para crear ebooks, cursos, copy y contenido viral</p>
+        </div>
+      </div>
+      <p style="font-size:13px; color:#374151; line-height:1.6; margin-bottom:15px;">Incluye prompts para cada sección de un infoproducto: estructura, contenido, diseño de portada, descripciones de venta y más. Copia, pega, personaliza y lanza.</p>
+      <div style="background:rgba(99,102,241,0.1); padding:12px; border-radius:8px; text-align:center;">
+        <a href="#" style="color:#6366f1; text-decoration:none; font-weight:600; font-size:14px;">📥 Descargar Bono 1</a>
+      </div>
+    </div>
+
+    <div class="card card-gradient" style="margin-bottom:25px;">
+      <div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <div style="width:60px; height:60px; background:linear-gradient(135deg,#22c55e,#16a34a); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:28px; flex-shrink:0;">🎨</div>
+        <div>
+          <h3 style="margin-bottom:5px; color:#1a1a1a;">Bono 2: Plantillas de Diseño para Canva</h3>
+          <p style="font-size:12px; color:#666; margin:0;">15 templates profesionales listos para personalizar</p>
+        </div>
+      </div>
+      <p style="font-size:13px; color:#374151; line-height:1.6; margin-bottom:15px;">Portadas de ebook, posts para redes sociales, páginas de venta y lead magnets. Solo cambia textos y colores. Diseño profesional en 5 minutos sin ser diseñador.</p>
+      <div style="background:rgba(34,197,94,0.1); padding:12px; border-radius:8px; text-align:center;">
+        <a href="#" style="color:#16a34a; text-decoration:none; font-weight:600; font-size:14px;">📥 Acceder a Plantillas</a>
+      </div>
+    </div>
+
+    <div class="card card-gradient" style="margin-bottom:25px;">
+      <div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <div style="width:60px; height:60px; background:linear-gradient(135deg,#f59e0b,#d97706); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:28px; flex-shrink:0;">🤖</div>
+        <div>
+          <h3 style="margin-bottom:5px; color:#1a1a1a;">Bono 3: Configuración de Chatbot ManyChat</h3>
+          <p style="font-size:12px; color:#666; margin:0;">Flujo automatizado de respuestas para Instagram y Facebook</p>
+        </div>
+      </div>
+      <p style="font-size:13px; color:#374151; line-height:1.6; margin-bottom:15px;">Plantilla pre-configurada con: mensaje de bienvenida, respuestas a FAQs, calificación de leads y seguimiento automático. Solo importas y personalizas los textos a tu negocio.</p>
+      <div style="background:rgba(251,191,36,0.1); padding:12px; border-radius:8px; text-align:center;">
+        <a href="#" style="color:#d97706; text-decoration:none; font-weight:600; font-size:14px;">📥 Descargar Flujo</a>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <h3>💎 Valor Total: $297 USD</h3>
+      <p>Tu inversión: Implementar lo aprendido. Los bonos: GRATIS.</p>
+    </div>
+
+    <div class="tip">
+      <div class="tip-header"><span>⚡</span><span class="tip-title">Úsalos Estratégicamente</span></div>
+      <p>No intentes usar los 3 bonos a la vez. Empieza con el Bono 1 para crear tu producto. Luego usa el Bono 2 para el diseño. Finalmente, el Bono 3 para automatizar las ventas.</p>
+    </div>
+
+    <div class="page-number">25</div>
+  </div>
+
+  <!-- PAGE 26: RECURSOS Y DESPEDIDA -->
+  <div class="page">
+    <div class="section-header">
+      <div class="section-tag">Recursos</div>
+      <h2 class="section-title">Recursos Esenciales y Despedida</h2>
+      <p class="section-desc">Todas las herramientas gratuitas mencionadas en un solo lugar.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>🤖 Inteligencia Artificial</h3>
+        <ul style="list-style:none; font-size:13px;">
+          <li style="margin-bottom:8px;">→ <strong>ChatGPT:</strong> chat.openai.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Gemini:</strong> gemini.google.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Claude:</strong> claude.ai</li>
+          <li style="margin-bottom:8px;">→ <strong>Perplexity:</strong> perplexity.ai</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🎨 Diseño Visual</h3>
+        <ul style="list-style:none; font-size:13px;">
+          <li style="margin-bottom:8px;">→ <strong>Gamma App:</strong> gamma.app</li>
+          <li style="margin-bottom:8px;">→ <strong>Canva:</strong> canva.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Midjourney:</strong> midjourney.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Firefly:</strong> adobe.com/firefly</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:15px;">
+      <div class="card">
+        <h3>📹 Video y Contenido</h3>
+        <ul style="list-style:none; font-size:13px;">
+          <li style="margin-bottom:8px;">→ <strong>Opus Clip:</strong> opus.pro</li>
+          <li style="margin-bottom:8px;">→ <strong>CapCut:</strong> capcut.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Descript:</strong> descript.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Loom:</strong> loom.com</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🤖 Automatización</h3>
+        <ul style="list-style:none; font-size:13px;">
+          <li style="margin-bottom:8px;">→ <strong>ManyChat:</strong> manychat.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Zapier:</strong> zapier.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Make:</strong> make.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Voiceflow:</strong> voiceflow.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:15px;">
+      <div class="card">
+        <h3>🛍️ Plataformas de Venta</h3>
+        <ul style="list-style:none; font-size:13px;">
+          <li style="margin-bottom:8px;">→ <strong>Gumroad:</strong> gumroad.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Hotmart:</strong> hotmart.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Etsy:</strong> etsy.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Amazon KDP:</strong> kdp.amazon.com</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📈 Analítica y Soporte</h3>
+        <ul style="list-style:none; font-size:13px;">
+          <li style="margin-bottom:8px;">→ <strong>Google Analytics:</strong> analytics.google.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Hotjar:</strong> hotjar.com</li>
+          <li style="margin-bottom:8px;">→ <strong>Stripe:</strong> stripe.com</li>
+          <li style="margin-bottom:8px;">→ <strong>PayPal:</strong> paypal.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:15px;">
+      <h3>🔚 Despedida</h3>
+      <p style="font-size:14px; line-height:1.6;">Gracias por leer esta guía. Empieza con un paso pequeño hoy: valida una idea, crea un MVP y publícalo. Si quieres, puedo ayudarte a convertir una de tus ideas en un índice o en un primer capítulo.</p>
+    </div>
+
+    <div class="page-number">26</div>
+  </div>
+
+</body>
+</html>
